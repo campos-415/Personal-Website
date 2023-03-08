@@ -7,7 +7,6 @@ import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
 
-
 function Navbar() {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
@@ -15,7 +14,6 @@ function Navbar() {
   const [navBg, setNavBg] = useState<string>("#ecf0f3");
   const [linkColor, setLinkColor] = useState<string>("#1f2937");
   const router = useRouter();
-  const [email, setEmail] = useState<string>("camposss.415@gmail.com")
 
   useEffect(() => {
     if (router.asPath === "/comflix" || router.asPath === "/twitter") {
@@ -28,10 +26,11 @@ function Navbar() {
       setInvertImg(false);
     }
   });
-
+  
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      const scrollY = window.scrollY;
+      if (scrollY >= 90) {
         setShadow(true);
         setNavBg("#ecf0f3");
       } else {
@@ -47,7 +46,6 @@ function Navbar() {
 
   return (
     <div
-      // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]"
@@ -66,30 +64,87 @@ function Navbar() {
 
         <div className="">
           <ul
-            // style={{ color: `${linkColor}` }}
-            className={shadow ? `hidden md:flex text-black` : "hidden md:flex text-white "}>
-            <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+            className={
+              router.asPath === "/" ||
+              router.asPath === "/#home" ||
+              router.asPath === "/#about" ||
+              router.asPath === "/#skills" ||
+              router.asPath === "/#projects" ||
+              router.asPath === "/#contact" ||
+              shadow
+                ? `hidden md:flex text-black`
+                : "hidden md:flex text-white "
+            }>
+            <Link href="/#home" className="group">
+              <li className="ml-10 text-sm uppercase hover:border-b ">
+                <span
+                  className={
+                    router.asPath === "/#home"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //
+                </span>
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                <span
+                  className={
+                    router.asPath === "/#about"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //{" "}
+                </span>
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                <span
+                  className={
+                    router.asPath === "/#skills"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //{" "}
+                </span>
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
+                <span
+                  className={
+                    router.asPath === "/#projects"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //{" "}
+                </span>
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
+                <span
+                  className={
+                    router.asPath === "/#contact"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //{" "}
+                </span>
                 Contact
               </li>
             </Link>
           </ul>
           <div
-            className={inverImg && !shadow ? "text-white md:hidden" : "md:hidden"}
+            className={
+              inverImg && !shadow ? "text-white md:hidden" : "md:hidden"
+            }
             onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
@@ -112,13 +167,7 @@ function Navbar() {
           <div className=" px-2 sm:px-4 md:px-6 -mt-8">
             <div className=" flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src={logoImg}
-                  width={150}
-                  height={100}
-                  alt="logo-img"
-
-                />
+                <Image src={logoImg} width={150} height={100} alt="logo-img" />
               </Link>
               <div
                 className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"

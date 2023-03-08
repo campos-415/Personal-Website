@@ -18,7 +18,7 @@ function About() {
             // NOT your regular developer :)
           </p>
           <p>
-            Hello, I am a 24 year old Salvadorean Frontend Software Engineer
+            Hello, I am a 24 year old Frontend Software Engineer
             with a passion for coding and creating innovative solutions. When
             I'm not busy writing code, you can find me spending time with my two
             furry best friends - my dogs. I also enjoy modifying cars and
