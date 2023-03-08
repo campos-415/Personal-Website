@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+// import c from "../public/assets/projects/comflix.png";
 import React from "react";
 import comflixImg from "../public/assets/projects/comflix.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
@@ -38,8 +39,14 @@ function comflix({ projectImg }: Props) {
             website allows you to search for movies by title, author, or
             keyword, making it simple to find exactly what you're looking for.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <Link href="https://comflix.vercel.app/" target="_blank">
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          </Link>
+          <Link
+            href="https://github.com/campos-415/Comflix.git"
+            target="_blank">
+            <button className="px-8 py-2 mt-4">Code</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gary-400 rounded-xl p-4">
           <div className="p-2">
@@ -73,11 +80,49 @@ function comflix({ projectImg }: Props) {
           </div>
         </div>
         <Link href="/#projects">
-          <div className="flex items-center space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
+          <div className="flex items-center mt-auto space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
             <IoMdArrowBack size={25} />
             <p className="text-lg underline">Back</p>
           </div>
         </Link>
+      </div>
+      <div className="max-w-[1240px] m-auto grid md:grid-cols-2 gap-8">
+        <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={comflixImg}
+            className=""
+            width={500}
+            height={500}
+            alt="img"
+          />
+        </div>
+        <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={comflixImg}
+            className=""
+            width={500}
+            height={500}
+            alt="img"
+          />
+        </div>
+        <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={comflixImg}
+            className=""
+            width={500}
+            height={500}
+            alt="img"
+          />
+        </div>
+        <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={comflixImg}
+            className=""
+            width={500}
+            height={500}
+            alt="img"
+          />
+        </div>
       </div>
     </div>
   );

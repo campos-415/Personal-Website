@@ -7,6 +7,7 @@ import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
 
+
 function Navbar() {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
@@ -32,6 +33,7 @@ function Navbar() {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
+        setNavBg("#ecf0f3");
       } else {
         setShadow(false);
       }
@@ -45,10 +47,10 @@ function Navbar() {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]"
           : "fixed w-full h-20 z-[100]"
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -58,12 +60,14 @@ function Navbar() {
             width={150}
             height={50}
             alt="logo-img"
-            className={inverImg ? "invert" : ""}
+            className={inverImg && !shadow ? "invert" : ""}
           />
         </Link>
 
         <div className="">
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <ul
+            // style={{ color: `${linkColor}` }}
+            className={shadow ? `hidden md:flex text-black` : "hidden md:flex text-white "}>
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -85,7 +89,7 @@ function Navbar() {
             </Link>
           </ul>
           <div
-            className={inverImg ? "text-white md:hidden" : "md:hidden"}
+            className={inverImg && !shadow ? "text-white md:hidden" : "md:hidden"}
             onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
@@ -102,7 +106,7 @@ function Navbar() {
           className={
             navBar
               ? `fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%]
-         h-screen bg-[#ecf0f3]  ease-in duration-500`
+         h-screen bg-[#ecf0f3]  ease-in-out duration-500`
               : `fixed top-0 left-[-100%] ease-in duration-500`
           }>
           <div className=" px-2 sm:px-4 md:px-6 -mt-8">
@@ -113,7 +117,7 @@ function Navbar() {
                   width={150}
                   height={100}
                   alt="logo-img"
-                  className={inverImg ? "invert" : ""}
+
                 />
               </Link>
               <div
