@@ -26,7 +26,10 @@ function comflix({ projectImg }: Props) {
       </div>
       <div className="max-w-[1240px] w-full mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className="text-[#5651e5]">Project</p>
+          <p className="text-[#5651e5]">
+            {" "}
+            <span className="text-gray-400">// </span>Project
+          </p>
           <h2 className="py-4">Overview</h2>
           <p className="">
             This is Movie search app, We offer a wide selection of movies for
