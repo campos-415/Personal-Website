@@ -1,48 +1,88 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 function Navbar() {
-  const [navBar, setNavBar] = useState(false)
+  const [navBar, setNavBar] = useState<boolean>(false);
+  const [shadow, setShadow] = useState<boolean>(false);
+  const [inverImg, setInvertImg] = useState<boolean>(false);
+  const [navBg, setNavBg] = useState<string>("#ecf0f3");
+  const [linkColor, setLinkColor] = useState<string>("#1f2937");
+  const router = useRouter();
+  const [email, setEmail] = useState<string>("camposss.415@gmail.com")
+
+  useEffect(() => {
+    if (router.asPath === "/comflix" || router.asPath === "/twitter") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+      setInvertImg(true);
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+      setInvertImg(false);
+    }
+  });
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   function handleNav() {
-    setNavBar(!navBar)
+    setNavBar(!navBar);
   }
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]">
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/../public/assets/2.png"
           width={150}
           height={50}
           alt="logo-img"
+          className={inverImg ? "invert" : ""}
         />
         <div className="">
-          <ul className="hidden md:flex">
-            <Link href="/">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+            <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
             </Link>
           </ul>
-          <div className=" md:hidden" onClick={handleNav}>
+          <div
+            className={inverImg ? "text-white md:hidden" : "md:hidden"}
+            onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -85,20 +125,30 @@ function Navbar() {
           </div>
           <div className="py-4 px-10 flex flex-col ">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-sm font-semibold">home</li>
+              <Link href="/#home" onClick={handleNav}>
+                <li className="py-4 text-sm font-semibold">
+                  <span className="text-gray-300">// </span>home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm font-semibold">about</li>
+              <Link href="/#about" onClick={handleNav}>
+                <li className="py-4 text-sm font-semibold">
+                  <span className="text-gray-300">// </span>about
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm font-semibold">skills</li>
+              <Link href="/#skills" onClick={handleNav}>
+                <li className="py-4 text-sm font-semibold">
+                  <span className="text-gray-300">// </span>skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm font-semibold">projects</li>
+              <Link href="/#projects" onClick={handleNav}>
+                <li className="py-4 text-sm font-semibold">
+                  <span className="text-gray-300">// </span>projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm font-semibold">contact</li>
+              <Link href="/#contact" onClick={handleNav}>
+                <li className="py-4 text-sm font-semibold">
+                  <span className="text-gray-300">// </span>contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
@@ -106,18 +156,28 @@ function Navbar() {
                 let's connect!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+                <Link
+                  href="https://www.linkedin.com/in/campos415/"
+                  target="_blank">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href="https://github.com/campos-415" target="_blank">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link href="/#contact">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+                <Link href="/CesarCamposResume.pdf" target="_blank">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsFilePdf />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

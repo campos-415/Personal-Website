@@ -2,13 +2,16 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
+import { BiLinkExternal } from "react-icons/bi"
 interface Props {
   imgUrl: StaticImageData;
   name: string;
   tools: string;
+  projectUrl: string
+  projectLiveUrl: string
 }
 
-function Project({ imgUrl, name, tools }: Props) {
+function Project({ imgUrl, name, tools, projectUrl, projectLiveUrl }: Props) {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#6561e5] to-[#709dff]">
       <Image
@@ -23,9 +26,27 @@ function Project({ imgUrl, name, tools }: Props) {
           {name}
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{tools}</p>
-        <Link href="/">
+
+        <Link href={projectUrl}>
           <div className="flex items-center justify-center  my-4 w-full sm:w-[80%]">
-            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">More Info <span className="ml-2"> <FaInfoCircle size={25}/></span></p>
+            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+              More Info{" "}
+              <span className="ml-2">
+                {" "}
+                <FaInfoCircle size={25} />
+              </span>
+            </p>
+          </div>
+        </Link>
+        <Link href={projectLiveUrl} target="_blank">
+          <div className="flex items-center justify-center  my-4 w-full sm:w-[80%]">
+            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+              Live Project{" "}
+              <span className="ml-2">
+                {" "}
+                <BiLinkExternal size={25} />
+              </span>
+            </p>
           </div>
         </Link>
       </div>
