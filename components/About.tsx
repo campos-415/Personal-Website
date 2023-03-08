@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { IoMdArrowBack, IoMdArrowDown } from 'react-icons/io';
+import aboutImg from "../public/assets/profilepic.png";
 
 function About() {
   return (
@@ -38,7 +39,7 @@ function About() {
         </div>
         <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
-            src="/../public/assets/profilepic.png"
+            src={aboutImg}
             className=""
             width={500}
             height={500}

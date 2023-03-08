@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import logoImg from "../public/assets/2.png";
 
 function Navbar() {
   const [navBar, setNavBar] = useState<boolean>(false);
@@ -51,13 +52,16 @@ function Navbar() {
           : "fixed w-full h-20 z-[100]"
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/2.png"
-          width={150}
-          height={50}
-          alt="logo-img"
-          className={inverImg ? "invert" : ""}
-        />
+        <Link href="/">
+          <Image
+            src={logoImg}
+            width={150}
+            height={50}
+            alt="logo-img"
+            className={inverImg ? "invert" : ""}
+          />
+        </Link>
+
         <div className="">
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/#home">
@@ -103,12 +107,15 @@ function Navbar() {
           }>
           <div className=" px-2 sm:px-4 md:px-6 -mt-8">
             <div className=" flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/2.png"
-                width={150}
-                height={100}
-                alt="logo-img"
-              />
+              <Link href="/">
+                <Image
+                  src={logoImg}
+                  width={150}
+                  height={100}
+                  alt="logo-img"
+                  className={inverImg ? "invert" : ""}
+                />
+              </Link>
               <div
                 className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleNav}>
