@@ -7,16 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-
       keyframes: {
-        wiggle: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
+        run: {
+          "0%" : { transform: "translateY(0vw)" },
+          "50%": { transform: "translateY(-50vh)" },
+          // "55%": { transform: "translateX(50vh)" },
+          // "55%": { transform: "scaleX(-1)" },
         },
       },
       animation: {
-        wiggle: "wiggle 1s ease-in-out infinite",
-        "spin-slow": "spin 2s linear infinite",
+        run: "run 7s ease-in-out infinite",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },

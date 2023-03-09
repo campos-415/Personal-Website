@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
+
 
 function Navbar() {
   const [navBar, setNavBar] = useState<boolean>(false);
@@ -15,6 +16,7 @@ function Navbar() {
   const [linkColor, setLinkColor] = useState<string>("#1f2937");
   const router = useRouter();
 
+ 
   useEffect(() => {
     if (router.asPath === "/comflix" || router.asPath === "/twitter") {
       setNavBg("transparent");
@@ -43,6 +45,8 @@ function Navbar() {
   function handleNav() {
     setNavBar(!navBar);
   }
+
+ 
 
   return (
     <div
@@ -176,11 +180,11 @@ function Navbar() {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4 flex items-center justify-center">
-              <p className="font-bold text-center">
+              <p className="text-xs font-bold text-center">
                 Let's build something cool together!
               </p>
               {""}
-              <span className="ml-1 block animate-spin-slow">🤪</span>{" "}
+              <span className="ml-1 block animate-spin-slow">⚙️</span>{" "}
             </div>
           </div>
           <div className="py-4 px-10 flex flex-col ">
@@ -211,7 +215,7 @@ function Navbar() {
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
+            <div className="pt-20">
               <p className="uppercase tracking-widest text-[#5651e5] font-bold">
                 let's connect!
               </p>

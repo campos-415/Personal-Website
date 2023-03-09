@@ -14,7 +14,8 @@ import github from '../public/assets/skills/github.png'
 
 function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 ">
+    <section id="skills">
+      <div className="w-full lg:h-screen p-2 ">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           <span className="text-gray-400">// </span>Skills
@@ -34,6 +35,8 @@ function Skills() {
         </div>
       </div>
     </div>
+    </section>
+    
   );
 }
 
