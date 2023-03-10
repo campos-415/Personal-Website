@@ -144,6 +144,19 @@ function Navbar() {
                 Contact
               </li>
             </Link>
+            {/* <Link href="/#contact">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                <span
+                  className={
+                    router.asPath === "/#contact"
+                      ? "text-[#5651e5]"
+                      : "text-gray-300"
+                  }>
+                  //{" "}
+                </span>
+                Contact
+              </li>
+            </Link> */}
           </ul>
           <div
             className={
