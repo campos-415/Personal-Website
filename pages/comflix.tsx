@@ -187,7 +187,7 @@ function comflix() {
         </Link>
         <Link href="/twitter">
           <div className="flex items-center mt-11 space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
-            <p className="text-lg underline">Next Projeect</p>
+            <p className="text-lg underline">Next Project</p>
             <IoMdArrowForward size={25} />
           </div>
         </Link>
