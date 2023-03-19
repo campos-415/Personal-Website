@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import TwitterImg from "../public/assets/projects/twitter.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
-import { IoMdArrowBack } from "react-icons/io";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Link from "next/link";
 import twittermb from "../public/assets/TwitterPS/twittermb.png";
 import twitterim from "../public/assets/TwitterPS/twitterim.png";
@@ -107,12 +107,6 @@ function Twitter() {
               </div>
             </div>
           </div>
-          <Link href="/#projects">
-            <div className="flex items-center mt-auto space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
-              <IoMdArrowBack size={25} />
-              <p className="text-lg underline">Back</p>
-            </div>
-          </Link>
         </div>
         <div className="max-w-[1240px] m-auto grid md:grid-cols-2 gap-8">
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
@@ -187,6 +181,20 @@ function Twitter() {
               alt="img"
             />
           </div>
+        </div>
+        <div className="flex items-center justify-between">
+          <Link href="/#projects">
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
+              <IoMdArrowBack size={25} />
+              <p className="text-lg underline">Back</p>
+            </div>
+          </Link>
+          <Link href="/twitter">
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
+              <p className="text-lg underline">Next Project</p>
+              <IoMdArrowForward size={25} />
+            </div>
+          </Link>
         </div>
       </div>
     </>
