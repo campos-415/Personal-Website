@@ -87,7 +87,7 @@ function Navbar() {
                       ? "text-[#5651e5]"
                       : "text-gray-300"
                   }>
-                  //
+                  //{" "}
                 </span>
                 Home
               </li>
