@@ -83,7 +83,7 @@ function Navbar() {
               <li className="ml-10 text-sm uppercase hover:border-b ">
                 <span
                   className={
-                    router.asPath === "/#home"
+                    router.asPath === "/#home" || router.asPath === "/"
                       ? "text-[#5651e5]"
                       : "text-gray-300"
                   }>
