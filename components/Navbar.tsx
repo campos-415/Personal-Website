@@ -84,7 +84,7 @@ function Navbar() {
                 <span
                   className={
                     router.asPath === "/#home" || router.asPath === "/"
-                      ? "text-[#5651e5]"
+                      ? "text-[#46a0ff]"
                       : "text-gray-300"
                   }>
                   //{" "}
@@ -97,7 +97,7 @@ function Navbar() {
                 <span
                   className={
                     router.asPath === "/#about"
-                      ? "text-[#5651e5]"
+                      ? "text-[#46a0ff]"
                       : "text-gray-300"
                   }>
                   //{" "}
@@ -110,7 +110,7 @@ function Navbar() {
                 <span
                   className={
                     router.asPath === "/#skills"
-                      ? "text-[#5651e5]"
+                      ? "text-[#46a0ff]"
                       : "text-gray-300"
                   }>
                   //{" "}
@@ -123,7 +123,7 @@ function Navbar() {
                 <span
                   className={
                     router.asPath === "/#projects"
-                      ? "text-[#5651e5]"
+                      ? "text-[#46a0ff]"
                       : "text-gray-300"
                   }>
                   //{" "}
@@ -136,7 +136,7 @@ function Navbar() {
                 <span
                   className={
                     router.asPath === "/#contact"
-                      ? "text-[#5651e5]"
+                      ? "text-[#46a0ff]"
                       : "text-gray-300"
                   }>
                   //{" "}
@@ -216,7 +216,7 @@ function Navbar() {
               </Link>
             </ul>
             <div className="pt-20">
-              <p className="uppercase tracking-widest text-[#5651e5] font-bold">
+              <p className="uppercase tracking-widest text-[#46a0ff] font-bold">
                 let's connect!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

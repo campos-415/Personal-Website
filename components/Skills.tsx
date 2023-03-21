@@ -16,27 +16,26 @@ function Skills() {
   return (
     <section id="skills">
       <div className="w-full lg:h-screen p-2 ">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          <span className="text-gray-400">// </span>Skills
-        </p>
-        <h2 className="py-4">What I Can Do</h2>
-        <div className="grid md:grid-cols-2  gap-8">
-          <Skill skillImg={html} name="html" />
-          <Skill skillImg={css} name="css" />
-          <Skill skillImg={javascript} name="javascript" />
-          <Skill skillImg={typescript} name="typescript" />
-          <Skill skillImg={react} name="react" />
-          <Skill skillImg={nextjs} name="nextjs" />
-          <Skill skillImg={node} name="node" />
-          <Skill skillImg={firebase} name="firebase" />
-          <Skill skillImg={tailwind} name="tailwind" />
-          <Skill skillImg={github} name="github" />
+        <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+          <p className="text-xl tracking-widest uppercase text-[#46a0ff]">
+            <span className="text-gray-400">// </span>Skills
+          </p>
+          <h2 className="py-4">What I Can Do</h2>
+          <div className="grid md:grid-cols-2  gap-8">
+            <Skill skillImg={html} name="html" />
+            <Skill skillImg={css} name="css" />
+            <Skill skillImg={javascript} name="javascript" />
+            <Skill skillImg={typescript} name="typescript" />
+            <Skill skillImg={react} name="react" />
+            <Skill skillImg={nextjs} name="nextjs" />
+            <Skill skillImg={node} name="node" />
+            <Skill skillImg={firebase} name="firebase" />
+            <Skill skillImg={tailwind} name="tailwind" />
+            <Skill skillImg={github} name="github" />
+          </div>
         </div>
       </div>
-    </div>
     </section>
-    
   );
 }
 

@@ -18,7 +18,7 @@ function HomePage() {
               <span className="ml-1 block animate-spin-slow">⚙️</span>
             </div>
             <h1 className="py-4 text-gray-700">
-              Hi, I'm <span className="text-[#5651e5]">Cesar</span>
+              Hi, I'm <span className="text-[#46a0ff]">Cesar</span>
             </h1>
             <h1 className="py-2 text-gray-700">A Frontend Developer</h1>
             <p className="py-4 text-gray-600 max-w-[80%] m-auto">

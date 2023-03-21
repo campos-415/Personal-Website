@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import contactus from "../public/assets/skills/contactus.svg";
+import contactus from "../public/assets/programming.svg";
 import { FormEvent, useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -52,7 +52,7 @@ export const Contact = () => {
     <section id="contact">
       <div className="w-full lg:h-screen">
         <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-          <p className="text-xl trackiing-widest uppercase text-[#5651e5] ">
+          <p className="text-xl trackiing-widest uppercase text-[#46a0ff] ">
             <span className="text-gray-400">// </span>Contact
           </p>
           <h2 className="py-4">Get In Touch</h2>
@@ -175,7 +175,7 @@ export const Contact = () => {
              shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp
                   size={30}
-                  className="text-[#5651e5]"
+                  className="text-[#46a0ff]"
                 />
               </div>
             </Link>

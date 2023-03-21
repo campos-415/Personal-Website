@@ -13,7 +13,7 @@ interface Props {
 
 function Project({ imgUrl, name, tools, projectUrl, projectLiveUrl }: Props) {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#6561e5] to-[#709dff]">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#46a0ff] to-[#285e97]">
       <Image
         src={imgUrl}
         width={500}

@@ -14,7 +14,6 @@ import netflixmodalmb from "../public/assets/comflixSC/netflixmodalmb.png";
 import netflixmodalip from "../public/assets/comflixSC/netflixmodalip.png";
 import Head from "next/head";
 
-
 function comflix() {
   return (
     <>
@@ -38,7 +37,7 @@ function comflix() {
         </div>
         <div className="max-w-[1240px] w-full mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
           <div className="col-span-4">
-            <p className="text-[#5651e5]">
+            <p className="text-[#46a0ff]">
               {" "}
               <span className="text-gray-400">// </span>Project
             </p>
@@ -63,14 +62,25 @@ function comflix() {
               enjoyable experience for movie lovers, making it the perfect
               platform for discovering and streaming movies.
             </p>
-            <Link href="https://comflix.vercel.app/" target="_blank">
-              <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-            </Link>
-            <Link
-              href="https://github.com/campos-415/Comflix.git"
-              target="_blank">
-              <button className="px-8 py-2 mt-4">Code</button>
-            </Link>
+            <div className="mt-10">
+              <p>
+                <span className="text-lg font-bold">Demo E-mail:</span>{" "}
+                demo@gmail.com
+              </p>
+              <p>
+                <span className="text-lg font-bold">Demo Password:</span>{" "}
+                demo123
+              </p>
+
+              <Link href="https://comflix.vercel.app/" target="_blank">
+                <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+              </Link>
+              <Link
+                href="https://github.com/campos-415/Comflix.git"
+                target="_blank">
+                <button className="px-8 py-2 mt-4">Code</button>
+              </Link>
+            </div>
           </div>
           <div className="col-span-4 md:col-span-1 shadow-xl shadow-gary-400 rounded-xl p-4">
             <div className="p-2">
@@ -122,12 +132,7 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image
-              src={netflixmb}
-              width={500}
-              height={500}
-              alt="projectImg"
-            />
+            <Image src={netflixmb} width={500} height={500} alt="projectImg" />
           </div>
           <div className="w-full h-[437px] m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
@@ -154,12 +159,7 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image
-              src={netflixip}
-              width={200}
-              height={200}
-              alt="projectImg"
-            />
+            <Image src={netflixip} width={200} height={200} alt="projectImg" />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
@@ -170,29 +170,23 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image
-              src={netflixim}
-              width={500}
-              height={500}
-              alt="projectImg"
-            />
+            <Image src={netflixim} width={500} height={500} alt="projectImg" />
           </div>
         </div>
         <div className="flex items-center justify-between">
           <Link href="/#projects">
-          <div className="flex items-center mt-11 space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
-            <IoMdArrowBack size={25} />
-            <p className="text-lg underline">Back</p>
-          </div>
-        </Link>
-        <Link href="/twitter">
-          <div className="flex items-center mt-11 space-x-2 hover:text-[#5651e5] active:scale-[0.90] duration-300 ease-in-out">
-            <p className="text-lg underline">Next Project</p>
-            <IoMdArrowForward size={25} />
-          </div>
-        </Link>
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
+              <IoMdArrowBack size={25} />
+              <p className="text-lg underline">Back</p>
+            </div>
+          </Link>
+          <Link href="/twitter">
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
+              <p className="text-lg underline">Next Project</p>
+              <IoMdArrowForward size={25} />
+            </div>
+          </Link>
         </div>
-        
       </div>
     </>
   );
