@@ -65,11 +65,11 @@ function comflix() {
               and efficient access for all users.
             </p>
             <div className="mt-10">
-              <Link href="https://comflix.vercel.app/" target="_blank">
+              <Link href="https://game-land-one.vercel.app/" target="_blank">
                 <button className="px-8 py-2 mt-4 mr-8">Demo</button>
               </Link>
               <Link
-                href="https://github.com/campos-415/mas.git"
+                href="https://github.com/campos-415/GameLand.git"
                 target="_blank">
                 <button className="px-8 py-2 mt-4">Code</button>
               </Link>

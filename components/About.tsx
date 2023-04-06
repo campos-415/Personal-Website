@@ -4,6 +4,7 @@ import React from 'react'
 import { IoMdArrowBack, IoMdArrowDown } from 'react-icons/io';
 import aboutImg from "../public/assets/profilepic.png";
 import arrowImg from "../public/assets/undraw_fun-arrow.svg";
+import { RiMapPinLine } from 'react-icons/ri';
 
 function About() {
   return (
@@ -50,7 +51,7 @@ function About() {
                 alt="img"
               />
               <p className='flex mt-1'>
-                Me @ Sequoia National Park <span className='animate-bounce block'>📍</span>
+                Me @ Sequoia National Park <span className='animate-bounce block'><RiMapPinLine /></span>
               </p>
             </div>
           </div>
