@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFilePdf, BsFillPersonLinesFill, BsGear } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
 
@@ -184,7 +184,7 @@ function Navbar() {
                 Let's build something cool together!
               </p>
               {""}
-              <span className="ml-1 block animate-spin-slow">⚙️</span>{" "}
+              <span className="ml-1 block animate-spin-slow"> <BsGear/> </span>{" "}
             </div>
           </div>
           <div className="py-4 px-10 flex flex-col ">

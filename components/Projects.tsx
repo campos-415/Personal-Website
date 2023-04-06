@@ -2,6 +2,7 @@ import React from 'react'
 import Project from './Project'
 import comflix from '../public/assets/projects/comflix.jpg'
 import twitter from '../public/assets/projects/twitter.jpg'
+import gamelandBG from '../public/assets/projects/gamelandBG.jpg'
 
 function Projects() {
   return (
@@ -13,6 +14,13 @@ function Projects() {
           </p>
           <h2 className="py-4">What I've Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
+            <Project
+              name="Game Land"
+              tools="TypeScript, NextJs, Tailwind"
+              imgUrl={gamelandBG}
+              projectUrl="/gameland"
+              projectLiveUrl="https://game-land-one.vercel.app/"
+            />
             <Project
               name="Comflix"
               tools="TypeScript, NextJs, Tailwind"

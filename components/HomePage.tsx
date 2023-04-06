@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFilePdf, BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFilePdf, BsFillPersonLinesFill, BsGear, BsRocket } from "react-icons/bs";
 import { FaGithub, FaLine, FaLinkedinIn } from "react-icons/fa";
 
 function HomePage() {
@@ -11,11 +11,11 @@ function HomePage() {
         <div className="max-w-[1240px] w-full h-full m-auto p-2 flex items-center justify-center">
           <div>
             <div className="flex items-center justify-center">
-              <span className="ml-1 block animate-run">🚀</span>{" "}
+
               <p className="text-xs uppercase sm:text-sm tracking-widest text-gray-600">
                 {" "}Let's build something cool together
               </p>
-              <span className="ml-1 block animate-spin-slow">⚙️</span>
+              <span className="ml-1 block animate-spin-slow"><BsGear /></span>
             </div>
             <h1 className="py-4 text-gray-700">
               Hi, I'm <span className="text-[#46a0ff]">Cesar</span>

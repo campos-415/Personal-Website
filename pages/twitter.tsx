@@ -183,15 +183,15 @@ function Twitter() {
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <Link href="/#projects">
+          <Link href="/comflix">
             <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
               <IoMdArrowBack size={25} />
-              <p className="text-lg underline">Back</p>
+              <p className="text-lg underline">Previous Project</p>
             </div>
           </Link>
-          <Link href="/twitter">
+          <Link href="/">
             <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
-              <p className="text-lg underline">Next Project</p>
+              <p className="text-lg underline">Home</p>
               <IoMdArrowForward size={25} />
             </div>
           </Link>
