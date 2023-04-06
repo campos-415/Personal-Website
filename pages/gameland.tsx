@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import comflixImg from "../public/assets/projects/comflix.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Link from "next/link";
@@ -14,14 +13,13 @@ import GameLandUser from "../public/assets/GLSC/GameLandUser.png";
 import GameLandUserM from "../public/assets/GLSC/GameLandUserM.png";
 import GameLandLoginM from "../public/assets/GLSC/GameLandLoginM.png";
 import GameLandHomeM from "../public/assets/GLSC/GameLandHomeM.png";
-import GameLandsidebar from "../public/assets/GLSC/GameLandsidebar.png";
+import GameLandsidebar from "../public/assets/GLSC/GameLandSidebar.png";
 import GameLandCreatorsM from "../public/assets/GLSC/GameLandCreatorsM.png";
 import GameLandPlatforms_LightM from "../public/assets/GLSC/GameLandPlatforms_LightM.png";
 import GameLandHero from "../public/assets/GLSC/GameLandHero.png";
 import GameLandCreators_Light from "../public/assets/GLSC/GameLandCreators_Light.png";
 import GameLandHome_LightM from "../public/assets/GLSC/GameLandHome_LightM.png";
 import performance from "../public/assets/GLSC/performance.png";
-// import Head from "next/head";
 import Head from "next/head";
 
 function comflix() {
