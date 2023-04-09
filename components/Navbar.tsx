@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFilePdf, BsFillPersonLinesFill, BsGear } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
+import logoImgM from "../public/assets/c-2.png";
 
 
 function Navbar() {
@@ -56,15 +57,27 @@ function Navbar() {
           : "fixed w-full h-20 z-[100]"
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
+        <div>
+          <Link href="/">
           <Image
             src={logoImg}
             width={150}
             height={50}
             alt="logo-img"
-            className={inverImg && !shadow ? "invert" : ""}
+            className={`${inverImg && !shadow ? "invert" : ""} hidden md:inline`}
           />
         </Link>
+        <Link href="/">
+          <Image
+            src={logoImgM}
+            width={125}
+            height={50}
+            alt="logo-img"
+            className={`${inverImg && !shadow ? "invert" : ""} md:hidden`}
+          />
+        </Link>
+        </div>
+        
 
         <div className="">
           <ul

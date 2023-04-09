@@ -67,13 +67,19 @@ export const Contact = () => {
                 <div className="pt-8">
                   <h2 className="py-2">Cesar Campos</h2>
                   <p>Frontend Developer</p>
-                  <p className="py-4">I am open for new opportunities </p>
+                  <p className="py-4">
+                    I am open for new opportunities whether you're looking to
+                    build a new website or improve an existing one, I'm
+                    committed to delivering solutions that meet your needs and
+                    exceed your expectations. Contact me today to discuss further opportunities and learn more about how I can help bring your
+                    vision to life.{" "}
+                  </p>
                 </div>
                 <div className="pt-8">
                   <p className="uppercase tracking-widest text-center pt-8">
                     Connect with me
                   </p>
-                  <div className="flex  justify-between max-w-[330px] m-auto py-4 ">
+                  <div className="flex  justify-between  gap-2 max-w-[330px] m-auto py-4 ">
                     <Link
                       href="https://www.linkedin.com/in/campos415/"
                       target="_blank">
@@ -86,11 +92,7 @@ export const Contact = () => {
                         <FaGithub />
                       </div>
                     </Link>
-                    <Link href="/#contact">
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                        <AiOutlineMail />
-                      </div>
-                    </Link>
+
                     <Link href="/CesarCamposResume.pdf" target="_blank">
                       <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                         <BsFilePdf />
@@ -174,7 +176,7 @@ export const Contact = () => {
                 className="rounded-full shadow-lg animate-[bounce_1s_ease-in-out_infinite]
              shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp
-                  size={30}
+                  size={25}
                   className="text-[#46a0ff]"
                 />
               </div>

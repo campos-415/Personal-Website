@@ -11,11 +11,13 @@ function HomePage() {
         <div className="max-w-[1240px] w-full h-full m-auto p-2 flex items-center justify-center">
           <div>
             <div className="flex items-center justify-center">
-
               <p className="text-xs uppercase sm:text-sm tracking-widest text-gray-600">
-                {" "}Let's build something cool together
+                {" "}
+                Let's build something cool together
               </p>
-              <span className="ml-1 block animate-spin-slow"><BsGear /></span>
+              <span className="ml-1 block animate-spin-slow">
+                <BsGear />
+              </span>
             </div>
             <h1 className="py-4 text-gray-700">
               Hi, I'm <span className="text-[#46a0ff]">Cesar</span>
@@ -31,22 +33,22 @@ function HomePage() {
                 href="https://www.linkedin.com/in/campos415/"
                 target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <FaLinkedinIn size={25} />
                 </div>
               </Link>
               <Link href="https://github.com/campos-415" target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <FaGithub size={25} />
                 </div>
               </Link>
               <Link href="/#contact">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <AiOutlineMail size={25} />
                 </div>
               </Link>
-              <Link href="/CesarCamposResume.pdf" target="_blank">
+              <Link href="/CesarCampos.pdf" target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFilePdf />
+                  <BsFilePdf size={25} />
                 </div>
               </Link>
             </div>

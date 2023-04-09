@@ -8,7 +8,7 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="space-y-32">
       <Head>
         <title>Cesar Campos</title>
         <link rel="icon" href="/favicon.ico" />
