@@ -175,13 +175,13 @@ function comflix() {
         </div>
         <div className="flex items-center justify-between">
           <Link href="/gameland">
-            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out mb-4">
               <IoMdArrowBack size={25} />
               <p className="text-lg underline">Previous Project</p>
             </div>
           </Link>
           <Link href="/twitter">
-            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out">
+            <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out mb-4">
               <p className="text-lg underline">Next Project</p>
               <IoMdArrowForward size={25} />
             </div>
