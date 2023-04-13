@@ -75,13 +75,13 @@ function About() {
               <p className="flex mt-1 font-permanentMarker">
                 Buki + Me + Koda{" "}
                 <span className="ml-1 block">
-                  <Image
+                  {/* <Image
                     src={heartImg}
                     className=""
                     width={25}
                     height={25}
                     alt="img"
-                  />
+                  /> */}
                 </span>
               </p>
             </div>
