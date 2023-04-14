@@ -7,14 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        run: {
-          "0%" : { transform: "translateY(0vw)" },
-          "50%": { transform: "translateY(-50vh)" },
-        },
+      fontFamily: {
+        'permanentMarker': ['Permanent Marker']
       },
       animation: {
-        run: "run 10s ease-in-out infinite",
         "spin-slow": "spin 4s linear infinite",
       },
     },

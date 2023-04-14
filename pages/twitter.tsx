@@ -189,9 +189,9 @@ function Twitter() {
               <p className="text-lg underline">Previous Project</p>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/comflixv1">
             <div className="flex items-center mt-11 space-x-2 hover:text-[#46a0ff] active:scale-[0.90] duration-300 ease-in-out mb-4">
-              <p className="text-lg underline">Home</p>
+              <p className="text-lg underline">Next Project</p>
               <IoMdArrowForward size={25} />
             </div>
           </Link>

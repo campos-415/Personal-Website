@@ -1,8 +1,11 @@
-import Link from "next/link";
+import Links from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFilePdf, BsFillPersonLinesFill, BsGear, BsRocket } from "react-icons/bs";
 import { FaGithub, FaLine, FaLinkedinIn } from "react-icons/fa";
+import { Link, animateScroll } from "react-scroll";
+
+
 
 function HomePage() {
   return (
@@ -29,28 +32,28 @@ function HomePage() {
               principles to ensure that my projects look great on all devices
             </p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-              <Link
+              <Links
                 href="https://www.linkedin.com/in/campos415/"
                 target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedinIn size={25} />
                 </div>
-              </Link>
-              <Link href="https://github.com/campos-415" target="_blank">
+              </Links>
+              <Links href="https://github.com/campos-415" target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub size={25} />
                 </div>
-              </Link>
-              <Link href="/#contact">
+              </Links>
+              <Link to="contact" spy={true} smooth={true} duration={100}>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail size={25} />
                 </div>
               </Link>
-              <Link href="/CesarCampos.pdf" target="_blank">
+              <Links href="/CesarCampos.pdf" target="_blank">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsFilePdf size={25} />
                 </div>
-              </Link>
+              </Links>
             </div>
           </div>
         </div>

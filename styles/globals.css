@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -26,3 +26,34 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#46a0ff] to-[#285e97] text-white;
   }
 }
+ @layer utilities {
+  .span_font{
+
+    font-family: monospace;
+  }
+  .photo_font{
+
+    font-family: 'Shadows Into Light', cursive;
+  }
+ }
+
+ /* permanent-marker-regular - latin */
+ @font-face {
+   font-display: swap;
+   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Permanent Marker';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../font/permanent-marker-v16-latin-regular.eot');
+   /* IE9 Compat Modes */
+   src: url('../font/permanent-marker-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+     /* IE6-IE8 */
+     url('../font/permanent-marker-v16-latin-regular.woff2') format('woff2'),
+     /* Super Modern Browsers */
+     url('../font/permanent-marker-v16-latin-regular.woff') format('woff'),
+     /* Modern Browsers */
+     url('../font/permanent-marker-v16-latin-regular.ttf') format('truetype'),
+     /* Safari, Android, iOS */
+     url('../font/permanent-marker-v16-latin-regular.svg#PermanentMarker') format('svg');
+   /* Legacy iOS */
+ }

@@ -1,12 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Links from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFilePdf, BsFillPersonLinesFill, BsGear } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
 import logoImgM from "../public/assets/c-2.png";
+// import {Link,scroll}
+import { Link, animateScroll } from "react-scroll";
+
 
 
 function Navbar() {
@@ -58,26 +61,29 @@ function Navbar() {
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div>
-          <Link href="/">
-          <Image
-            src={logoImg}
-            width={150}
-            height={50}
-            alt="logo-img"
-            className={`${inverImg && !shadow ? "invert" : ""} hidden md:inline`}
-          />
-        </Link>
-        <Link href="/">
-          <Image
-            src={logoImgM}
-            width={125}
-            height={50}
-            alt="logo-img"
-            className={`${inverImg && !shadow ? "invert" : ""} md:hidden`}
-          />
-        </Link>
+          <Links href="/">
+            <Image
+              src={logoImg}
+              width={150}
+              height={50}
+              alt="logo-img"
+              className={`${
+                inverImg && !shadow ? "invert" : ""
+              } hidden md:inline`}
+            />
+          </Links>
+          <Links
+            href="/"
+            className="cursor-pointer">
+            <Image
+              src={logoImgM}
+              width={125}
+              height={50}
+              alt="logo-img"
+              className={`${inverImg && !shadow ? "invert" : ""} md:hidden`}
+            />
+          </Links>
         </div>
-        
 
         <div className="">
           <ul
@@ -92,7 +98,12 @@ function Navbar() {
                 ? `hidden md:flex text-black`
                 : "hidden md:flex text-white "
             }>
-            <Link href="/#home" className="group">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={100}
+              className="group">
               <li className="ml-10 text-sm uppercase hover:border-b ">
                 <span
                   className={
@@ -105,7 +116,12 @@ function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/#about">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={100}
+              className="group">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 <span
                   className={
@@ -118,7 +134,12 @@ function Navbar() {
                 About
               </li>
             </Link>
-            <Link href="/#skills">
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={100}
+              className="group">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 <span
                   className={
@@ -131,7 +152,12 @@ function Navbar() {
                 Skills
               </li>
             </Link>
-            <Link href="/#projects">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={100}
+              className="group">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 <span
                   className={
@@ -144,7 +170,12 @@ function Navbar() {
                 Projects
               </li>
             </Link>
-            <Link href="/#contact">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={100}
+              className="group">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 <span
                   className={
@@ -183,7 +214,7 @@ function Navbar() {
           }>
           <div className=" px-2 sm:px-4 md:px-6 -mt-8">
             <div className=" flex w-full items-center justify-between">
-              <Link href="/">
+              <Link to="/">
                 <Image src={logoImg} width={150} height={100} alt="logo-img" />
               </Link>
               <div
@@ -197,32 +228,65 @@ function Navbar() {
                 Let's build something cool together!
               </p>
               {""}
-              <span className="ml-1 block animate-spin-slow"> <BsGear/> </span>{" "}
+              <span className="ml-1 block animate-spin-slow">
+                {" "}
+                <BsGear />{" "}
+              </span>{" "}
             </div>
           </div>
           <div className="py-4 px-10 flex flex-col ">
             <ul className="uppercase">
-              <Link href="/#home" onClick={handleNav}>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="group"
+                onClick={handleNav}>
                 <li className="py-4 text-sm font-semibold">
                   <span className="text-gray-300">// </span>home
                 </li>
               </Link>
-              <Link href="/#about" onClick={handleNav}>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="group"
+                onClick={handleNav}>
                 <li className="py-4 text-sm font-semibold">
                   <span className="text-gray-300">// </span>about
                 </li>
               </Link>
-              <Link href="/#skills" onClick={handleNav}>
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="group"
+                onClick={handleNav}>
                 <li className="py-4 text-sm font-semibold">
                   <span className="text-gray-300">// </span>skills
                 </li>
               </Link>
-              <Link href="/#projects" onClick={handleNav}>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="group"
+                onClick={handleNav}>
                 <li className="py-4 text-sm font-semibold">
                   <span className="text-gray-300">// </span>projects
                 </li>
               </Link>
-              <Link href="/#contact" onClick={handleNav}>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="group"
+                onClick={handleNav}>
                 <li className="py-4 text-sm font-semibold">
                   <span className="text-gray-300">// </span>contact
                 </li>
@@ -233,28 +297,28 @@ function Navbar() {
                 let's connect!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <Link
+                <Links
                   href="https://www.linkedin.com/in/campos415/"
                   target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                </Link>
-                <Link href="https://github.com/campos-415" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                </Links>
+                <Links href="https://github.com/campos-415" target="_blank">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
-                </Link>
-                <Link href="/#contact">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                </Links>
+                <Link to="contact" spy={true} smooth={true} duration={100} onClick={handleNav}>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href="/CesarCamposResume.pdf" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <Links href="/CesarCampos.pdf" target="_blank">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <BsFilePdf />
                   </div>
-                </Link>
+                </Links>
               </div>
             </div>
           </div>
