@@ -43,7 +43,7 @@ function comflix() {
             </p>
             <h2 className="py-4">Overview</h2>
             <p className="">
-              This isca website that was built entirely using Vanilla
+              This is a website that was built entirely using Vanilla
               JavaScript, CSS, and HTML5. My website is dedicated to showcasing
               an extensive collection of movies available in the OMDB API. With
               our clean and user-friendly interface, you can easily browse and

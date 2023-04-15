@@ -27,24 +27,24 @@ function Project({ imgUrl, name, tools, projectUrl, projectLiveUrl }: Props) {
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{tools}</p>
 
-        <Link href={projectUrl}>
-          <div className="flex items-center justify-center  my-4 w-full sm:w-[80%]">
-            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+        <Link href={projectUrl} target="_blank">
+          <div className="flex items-center justify-center  my-4 w-full ">
+            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-md cursor-pointer">
               More Info{" "}
               <span className="ml-2">
                 {" "}
-                <FaInfoCircle size={25} />
+                <FaInfoCircle size={20} />
               </span>
             </p>
           </div>
         </Link>
         <Link href={projectLiveUrl} target="_blank">
-          <div className="flex items-center justify-center  my-4 w-full sm:w-[80%]">
-            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <div className="flex items-center justify-center  my-4 w-full ">
+            <p className="flex items-center text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-md cursor-pointer">
               Live Project{" "}
               <span className="ml-2">
                 {" "}
-                <BiLinkExternal size={25} />
+                <BiLinkExternal size={20} />
               </span>
             </p>
           </div>

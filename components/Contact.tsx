@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Links from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BsFilePdf } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -7,6 +7,7 @@ import contactus from "../public/assets/programming.svg";
 import { FormEvent, useState } from "react";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "react-hot-toast";
+import { Link } from "react-scroll";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -47,7 +48,7 @@ export const Contact = () => {
     setEmail("");
     setSubject("");
     setMessage("");
-    notify()
+    notify();
   };
 
   const notify = () =>
@@ -55,7 +56,7 @@ export const Contact = () => {
       duration: 6000,
       style: toastStyle,
     });
-  
+
   return (
     <>
       <Toaster position="top-center" />
@@ -91,26 +92,26 @@ export const Contact = () => {
                       Connect with me
                     </p>
                     <div className="flex  justify-between  gap-2 max-w-[330px] m-auto py-4 ">
-                      <Link
+                      <Links
                         href="https://www.linkedin.com/in/campos415/"
                         target="_blank">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                           <FaLinkedinIn />
                         </div>
-                      </Link>
-                      <Link
+                      </Links>
+                      <Links
                         href="https://github.com/campos-415"
                         target="_blank">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                           <FaGithub />
                         </div>
-                      </Link>
+                      </Links>
 
-                      <Link href="/CesarCampos.pdf" target="_blank">
+                      <Links href="/CesarCampos.pdf" target="_blank">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                           <BsFilePdf />
                         </div>
-                      </Link>
+                      </Links>
                     </div>
                   </div>
                 </div>
@@ -173,7 +174,6 @@ export const Contact = () => {
                         Message
                       </label>
                       <textarea
-                        
                         value={message}
                         onChange={(event) => setMessage(event.target.value)}
                         className="border-2 rounded-lg py-3 border-gray-300"
@@ -190,7 +190,12 @@ export const Contact = () => {
               </div>
             </div>
             <div className="flex justify-center py-12 ">
-              <Link href="/#home">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={100}
+                className="cursor-pointer">
                 <div
                   className="rounded-full shadow-lg animate-[bounce_1s_ease-in-out_infinite]
              shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
