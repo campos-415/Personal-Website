@@ -8,10 +8,10 @@ import Link from "next/link";
 // import comflixmb2 from "../public/assets/comflixSCV1/comflixmb2.png";
 // import comflixmb3 from "../public/assets/comflixSCV1/comflixmb3.png";
 // import comflixmb4 from "../public/assets/comflixSCV1/comflixmb4.png";
-import comflixm1 from "../public/assets/comflixSCV1/comflixm1.png";
-import comflixm2 from "../public/assets/comflixSCV1/comflixm2.png";
-import comflixm3 from "../public/assets/comflixSCV1/comflixm3.png";
-import comflixm4 from "../public/assets/comflixSCV1/comflixm4.png";
+// import comflixm1 from "../public/assets/comflixSCV1/comflixm1.png";
+// import comflixm2 from "../public/assets/comflixSCV1/comflixm2.png";
+// import comflixm3 from "../public/assets/comflixSCV1/comflixm3.png";
+// import comflixm4 from "../public/assets/comflixSCV1/comflixm4.png";
 import Head from "next/head";
 
 function comflix() {
@@ -113,7 +113,7 @@ function comflix() {
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image src={comflixmb4} width={500} height={500} alt="projectImg" />
           </div> */}
-          <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          {/* <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image src={comflixm1} width={200} height={200} alt="projectImg" />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
@@ -124,7 +124,7 @@ function comflix() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image src={comflixm4} width={200} height={200} alt="projectImg" />
-          </div>
+          </div> */}
         </div>
         <div className="flex items-center justify-between">
           <Link href="/twitter">
