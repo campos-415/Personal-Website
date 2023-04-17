@@ -36,7 +36,7 @@ function About() {
                   Projects
                 </Link>
               </span>{" "}
-              writting code, you can find me spending time with my two furry
+              writing code, you can find me spending time with my two furry
               best friends - my dogs. I also enjoy modifying cars and capturing
               life's moments through photography. I find that my hobbies allow
               me to express my creativity in unique ways and give me a fresh
