@@ -27,8 +27,7 @@ function HomePage() {
             </h1>
             <h1 className="py-2 text-gray-700">A Frontend Developer</h1>
             <p className="py-4 text-gray-600 max-w-[80%] m-auto">
-              I have a strong foundation in HTML, CSS, JavaScript, TypeScript,
-              React & NextJs. I am skilled at implementing responsive design
+              I have a strong foundation in HTML, CSS, JavaScript & React I am skilled at implementing responsive design
               principles to ensure that my projects look great on all devices
             </p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
