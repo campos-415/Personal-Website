@@ -1,9 +1,9 @@
 import Links from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFilePdf, BsFillPersonLinesFill, BsGear, BsRocket } from "react-icons/bs";
-import { FaGithub, FaLine, FaLinkedinIn } from "react-icons/fa";
-import { Link, animateScroll } from "react-scroll";
+import { BsFilePdf, BsGear } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 
 

@@ -1,14 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Links from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFilePdf, BsFillPersonLinesFill, BsGear } from "react-icons/bs";
+import { BsFilePdf, BsGear } from "react-icons/bs";
 import { useRouter } from "next/router";
 import logoImg from "../public/assets/2.png";
 import logoImgM from "../public/assets/c-2.png";
-// import {Link,scroll}
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 
@@ -16,19 +15,12 @@ function Navbar() {
   const [navBar, setNavBar] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
   const [inverImg, setInvertImg] = useState<boolean>(false);
-  const [navBg, setNavBg] = useState<string>("#ecf0f3");
-  const [linkColor, setLinkColor] = useState<string>("#1f2937");
   const router = useRouter();
-
  
   useEffect(() => {
     if (router.asPath === "/comflix" || router.asPath === "/twitter") {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
       setInvertImg(true);
     } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
       setInvertImg(false);
     }
   });
@@ -38,7 +30,6 @@ function Navbar() {
       const scrollY = window.scrollY;
       if (scrollY >= 90) {
         setShadow(true);
-        setNavBg("#ecf0f3");
       } else {
         setShadow(false);
       }
@@ -49,8 +40,6 @@ function Navbar() {
   function handleNav() {
     setNavBar(!navBar);
   }
-
- 
 
   return (
     <div

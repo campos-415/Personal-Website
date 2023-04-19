@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import TwitterImg from "../public/assets/projects/twitter.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi"
+
 interface Props {
   imgUrl: StaticImageData;
   name: string;

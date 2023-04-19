@@ -1,10 +1,9 @@
 import Image from 'next/image';
-
 import React from 'react'
 import aboutImg from "../public/assets/profilepic.png";
 import babiesImg from "../public/assets/fatties2.jpeg";
 import heartImg from "../public/assets/heart.svg";
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 
