@@ -4,14 +4,14 @@ import comflixV1Img from "../public/assets/projects/ComFlix-Home.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import Link from "next/link";
-import comflixmb1 from "../public/assets/comflixSCV1/comflixmb1.png";
-import comflixmb2 from "../public/assets/comflixSCV1/comflixmb2.png";
-import comflixmb3 from "../public/assets/comflixSCV1/comflixmb3.png";
-import comflixmb4 from "../public/assets/comflixSCV1/comflixmb4.png";
-import comflixm1 from "../public/assets/comflixSCV1/comflixm1.png";
-import comflixm2 from "../public/assets/comflixSCV1/comflixm2.png";
-import comflixm3 from "../public/assets/comflixSCV1/comflixm3.png";
-import comflixm4 from "../public/assets/comflixSCV1/comflixm4.png";
+import comflixmb1 from "./public/assets/comflixSCV1/comflixmb1.png";
+import comflixmb2 from "./public/assets/comflixSCV1/comflixmb2.png";
+import comflixmb3 from "./public/assets/comflixSCV1/comflixmb3.png";
+import comflixmb4 from "./public/assets/comflixSCV1/comflixmb4.png";
+import comflixm1 from "./public/assets/comflixSCV1/comflixm1.png";
+import comflixm2 from "./public/assets/comflixSCV1/comflixm2.png";
+import comflixm3 from "./public/assets/comflixSCV1/comflixm3.png";
+import comflixm4 from "./public/assets/comflixSCV1/comflixm4.png";
 import Head from "next/head";
 
 function comflix() {
