@@ -19,7 +19,7 @@ function About() {
             <h2 className="py-4"> Who I Am</h2>
             <p className="py-4 text-gray-300 span_font text-lg">
               {" "}
-              &lt;NOT your regular developer/&gt; &nbsp;{" "}
+              &lt;NotYour regular=&#123;developer&#125; /&gt; &nbsp;{" "}
               <span className="absolute rotate-90">:)</span>
             </p>
             <p>
@@ -35,8 +35,8 @@ function About() {
                   Projects
                 </Link>
               </span>{" "}
-              writing code, you can find me spending time with my two furry
-              best friends - my dogs. I also enjoy modifying cars and capturing
+              writing code, you can find me spending time with my two furry best
+              friends - my dogs. I also enjoy modifying cars and capturing
               life's moments through photography. I find that my hobbies allow
               me to express my creativity in unique ways and give me a fresh
               perspective when tackling complex engineering problems. In my free
