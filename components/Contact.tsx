@@ -72,7 +72,7 @@ export const Contact = () => {
 
               <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl">
                 <div className="flex flex-col items-center justify-center lg:p-4 h-full rounded-xl p-4 ">
-                  <div>
+                  <div >
                     <Image
                       style={{ width: "auto", height: "auto" }}
                       width={500}
@@ -132,6 +132,7 @@ export const Contact = () => {
                           htmlFor="name"
                           className="uppercase text-sm py-2 font-semibold">
                           Name
+                        </label>
                           <input
                             autoComplete="on"
                             id="name"
@@ -141,13 +142,13 @@ export const Contact = () => {
                             onChange={(event) => setName(event.target.value)}
                             className="border-2 rounded-lg p-3 flex border-gray-300"
                           />
-                        </label>
                       </div>
                       <div className="flex flex-col">
                         <label
                           htmlFor="phoneNumber"
                           className="uppercase text-sm py-2 font-semibold">
                           Phone Number
+                        </label>
                           <input
                             autoComplete="on"
                             id="phoneNumber"
@@ -157,7 +158,6 @@ export const Contact = () => {
                             onChange={(event) => setNumber(event.target.value)}
                             className="border-2 rounded-lg p-3 flex border-gray-300"
                           />
-                        </label>
                       </div>
                     </div>
                     <div className="flex flex-col py-2">
@@ -165,6 +165,7 @@ export const Contact = () => {
                         htmlFor="email"
                         className="uppercase text-sm py-2 font-semibold">
                         email
+                      </label>
                         <input
                           autoComplete="on"
                           id="email"
@@ -174,13 +175,13 @@ export const Contact = () => {
                           onChange={(event) => setEmail(event.target.value)}
                           className="border-2 rounded-lg p-3 flex border-gray-300"
                         />
-                      </label>
                     </div>
                     <div className="flex flex-col py-2">
                       <label
                         htmlFor="subject"
                         className="uppercase text-sm py-2 font-semibold">
                         Subject
+                      </label>
                         <input
                           autoComplete="on"
                           id="subject"
@@ -189,13 +190,13 @@ export const Contact = () => {
                           onChange={(event) => setSubject(event.target.value)}
                           className="border-2 rounded-lg p-3 flex border-gray-300"
                         />
-                      </label>
                     </div>
                     <div className="flex flex-col py-2">
                       <label
                         htmlFor="message"
                         className="uppercase text-sm py-2 font-semibold">
                         Message
+                      </label>
                         <textarea
                           id="message"
                           value={message}
@@ -203,7 +204,6 @@ export const Contact = () => {
                           className="border-2 rounded-lg py-3 border-gray-300"
                           rows={10}
                         />
-                      </label>
                     </div>
                     <button
                       type="submit"

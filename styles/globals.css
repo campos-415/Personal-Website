@@ -49,13 +49,12 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#46a0ff] to-[#285e97] text-white;
   }
 }
- @layer utilities {
+ @layer components {
   .span_font{
-
     font-family: monospace;
+    white-space: nowrap
   }
   .photo_font{
-
     font-family: 'Shadows Into Light', cursive;
   }
  }

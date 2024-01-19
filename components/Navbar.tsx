@@ -52,6 +52,7 @@ function Navbar() {
         <div>
           <Links href="/">
             <Image
+              priority
               style={{ width: "auto", height: "auto" }}
               src={logoImg}
               width={150}
@@ -64,6 +65,7 @@ function Navbar() {
           </Links>
           <Links href="/" className="cursor-pointer">
             <Image
+              priority
               style={{ width: "auto", height: "auto" }}
               src={logoImgM}
               width={125}
@@ -205,6 +207,7 @@ function Navbar() {
             <div className=" flex w-full items-center justify-between">
               <Link to="/">
                 <Image
+                  priority
                   style={{ width: "auto", height: "auto" }}
                   src={logoImg}
                   width={150}

@@ -61,6 +61,7 @@ function HomePage() {
             </div>
             <div className="flex items-center justify-between max-w-[100px] md:max-w-[230px] m-auto py-4">
               <Image
+                
                 style={{ width: "auto", height: "auto" }}
                 src={heroImg}
                 width={400}

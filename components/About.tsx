@@ -1,11 +1,9 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import aboutImg from "../public/assets/profilepic.png";
 import babiesImg from "../public/assets/fatties2.jpeg";
 import heartImg from "../public/assets/heart.svg";
 import { Link } from "react-scroll";
-
-
 
 function About() {
   return (
@@ -47,8 +45,8 @@ function About() {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col relative group mx-auto md:h-[600px] max-w-[600px]">
-          <div className="md:absolute top-10 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group my-12  md:my-0 md:rotate-[15deg] md:group-hover:translate-x-[160px] md:group-hover:rotate-0 bg-white">
+        <div className=" flex flex-col md:-space-x-24 relative group mx-auto md:h-[500px] max-w-[500px]">
+          <div className="md:absolute top-10 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group mt-12 md:my-0 md:rotate-[15deg] md:group-hover:translate-x-[160px] md:group-hover:rotate-0 bg-white">
             <Image
               style={{ width: "auto", height: "auto" }}
               src={aboutImg}
@@ -58,34 +56,32 @@ function About() {
               alt="img"
             />
             <div className="flex flex-col items-center justify-between my-2">
-              <p className="flex mt-1 pt-8 font-permanentMarker">
+              <p className="flex mt-1 text-sm pt-8 font-permanentMarker">
                 I love exploring new places{" "}
               </p>
             </div>
           </div>
-          <div className="md:absolute top-10 z-2 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group md:rotate-[-15deg] md:group-hover:translate-x-[-200px] md:group-hover:rotate-0 bg-white">
+          <div className="md:absolute top-10 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group mt-6 md:mt-0 md:rotate-[-15deg] md:group-hover:translate-x-[-200px] md:group-hover:rotate-0 bg-white z-10">
             <Image
               style={{ width: "auto", height: "auto" }}
               src={babiesImg}
+              priority
               className="group rounded-md"
               width={300}
               height={300}
               alt="img"
             />
-            <div className="flex pt-8 items-center justify-start my-2">
-              <p className="flex mt-1 font-permanentMarker">
-                Buki + Me + Koda{" "}
-                <span className="ml-1 block">
-                  <Image
-                    style={{ width: "auto", height: "auto" }}
-                    src={heartImg}
-                    className=""
-                    width={25}
-                    height={25}
-                    alt="img"
-                  />
-                </span>
-              </p>
+            <div className="flex pt-8 items-center justify-between my-2">
+              <p className="flex font-permanentMarker">Buki + Me + Koda </p>
+              <div className="ml-1 block ">
+                <Image
+                  style={{ width: 25, height:25 }}
+                  src={heartImg}
+                  width={25}
+                  height={25}
+                  alt="img"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -94,4 +90,4 @@ function About() {
   );
 }
 
-export default About
+export default About;
