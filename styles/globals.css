@@ -1,23 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Permanent Marker';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../font/permanent-marker-v16-latin-regular.eot');
-  /* IE9 Compat Modes */
-  src: url('../font/permanent-marker-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../font/permanent-marker-v16-latin-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../font/permanent-marker-v16-latin-regular.woff') format('woff'),
-    /* Modern Browsers */
-    url('../font/permanent-marker-v16-latin-regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../font/permanent-marker-v16-latin-regular.svg#PermanentMarker') format('svg');
-  /* Legacy iOS */
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,4 +37,23 @@ html {
   }
  }
 
- 
+ /* permanent-marker-regular - latin */
+ @font-face {
+   font-display: swap;
+   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   font-family: 'Permanent Marker';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../font/permanent-marker-v16-latin-regular.eot');
+   /* IE9 Compat Modes */
+   src: url('../font/permanent-marker-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+     /* IE6-IE8 */
+     url('../font/permanent-marker-v16-latin-regular.woff2') format('woff2'),
+     /* Super Modern Browsers */
+     url('../font/permanent-marker-v16-latin-regular.woff') format('woff'),
+     /* Modern Browsers */
+     url('../font/permanent-marker-v16-latin-regular.ttf') format('truetype'),
+     /* Safari, Android, iOS */
+     url('../font/permanent-marker-v16-latin-regular.svg#PermanentMarker') format('svg');
+   /* Legacy iOS */
+ }
