@@ -50,6 +50,7 @@ function About() {
         <div className=" flex flex-col relative group mx-auto md:h-[600px] max-w-[600px]">
           <div className="md:absolute top-10 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group my-12  md:my-0 md:rotate-[15deg] md:group-hover:translate-x-[160px] md:group-hover:rotate-0 bg-white">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={aboutImg}
               className="group rounded-md"
               width={300}
@@ -64,6 +65,7 @@ function About() {
           </div>
           <div className="md:absolute top-10 z-2 left-36 w-auto h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 md:group-hover:scale-105 ease-in duration-300 flex-col group md:rotate-[-15deg] md:group-hover:translate-x-[-200px] md:group-hover:rotate-0 bg-white">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={babiesImg}
               className="group rounded-md"
               width={300}
@@ -75,6 +77,7 @@ function About() {
                 Buki + Me + Koda{" "}
                 <span className="ml-1 block">
                   <Image
+                    style={{ width: "auto", height: "auto" }}
                     src={heartImg}
                     className=""
                     width={25}

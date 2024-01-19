@@ -33,6 +33,8 @@ function comflix() {
         <div className="w-screen h-[30vh] lg:h-[40vh] relative">
           <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10" />
           <Image
+            // style={{ width: "auto", height: "auto" }}
+            priority
             src={gamelandBG}
             fill
             className="absolute z-1 object-cover"
@@ -118,6 +120,7 @@ function comflix() {
         <div className="max-w-[1240px] m-auto grid md:grid-cols-2 gap-8">
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandLogin}
               width={500}
               height={500}
@@ -126,6 +129,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandUser}
               width={500}
               height={500}
@@ -134,6 +138,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandHome_Dark}
               width={500}
               height={500}
@@ -142,6 +147,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandHome}
               width={500}
               height={500}
@@ -150,6 +156,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandMyList}
               width={500}
               height={500}
@@ -158,6 +165,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandGenres}
               width={500}
               height={500}
@@ -166,6 +174,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandHero}
               width={500}
               height={500}
@@ -174,6 +183,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandCreators_Light}
               width={500}
               height={500}
@@ -182,6 +192,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandsidebar}
               width={500}
               height={500}
@@ -190,6 +201,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={performance}
               width={500}
               height={500}
@@ -199,6 +211,7 @@ function comflix() {
 
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandLoginM}
               width={200}
               height={200}
@@ -207,6 +220,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandUserM}
               width={200}
               height={200}
@@ -215,6 +229,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandHomeM}
               width={200}
               height={200}
@@ -223,6 +238,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandHome_LightM}
               width={200}
               height={200}
@@ -231,6 +247,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandCreatorsM}
               width={200}
               height={200}
@@ -239,6 +256,7 @@ function comflix() {
           </div>
           <div className="w-full h-full m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={GameLandPlatforms_LightM}
               width={200}
               height={200}

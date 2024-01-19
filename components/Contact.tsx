@@ -73,7 +73,13 @@ export const Contact = () => {
               <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl">
                 <div className="flex flex-col items-center justify-center lg:p-4 h-full rounded-xl p-4 ">
                   <div>
-                    <Image width={500} height={500} src={contactus} alt="" />
+                    <Image
+                      style={{ width: "auto", height: "auto" }}
+                      width={500}
+                      height={500}
+                      src={contactus}
+                      alt=""
+                    />
                   </div>
                   <div className="pt-8">
                     <h2 className="py-2">Cesar Campos</h2>
@@ -119,66 +125,85 @@ export const Contact = () => {
               {/* right side */}
               <div className="col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
                 <div className="p-4">
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={handleSubmit} id="contact-form">
                     <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                       <div className="flex flex-col">
-                        <label className="uppercase text-sm py-2 font-semibold">
+                        <label
+                          htmlFor="name"
+                          className="uppercase text-sm py-2 font-semibold">
                           Name
+                          <input
+                            autoComplete="on"
+                            id="name"
+                            required
+                            type="text"
+                            value={name}
+                            onChange={(event) => setName(event.target.value)}
+                            className="border-2 rounded-lg p-3 flex border-gray-300"
+                          />
                         </label>
-                        <input
-                          required
-                          type="text"
-                          value={name}
-                          onChange={(event) => setName(event.target.value)}
-                          className="border-2 rounded-lg p-3 flex border-gray-300"
-                        />
                       </div>
                       <div className="flex flex-col">
-                        <label className="uppercase text-sm py-2 font-semibold">
+                        <label
+                          htmlFor="phoneNumber"
+                          className="uppercase text-sm py-2 font-semibold">
                           Phone Number
+                          <input
+                            autoComplete="on"
+                            id="phoneNumber"
+                            required
+                            type="text"
+                            value={number}
+                            onChange={(event) => setNumber(event.target.value)}
+                            className="border-2 rounded-lg p-3 flex border-gray-300"
+                          />
                         </label>
-                        <input
-                          required
-                          type="text"
-                          value={number}
-                          onChange={(event) => setNumber(event.target.value)}
-                          className="border-2 rounded-lg p-3 flex border-gray-300"
-                        />
                       </div>
                     </div>
                     <div className="flex flex-col py-2">
-                      <label className="uppercase text-sm py-2 font-semibold">
+                      <label
+                        htmlFor="email"
+                        className="uppercase text-sm py-2 font-semibold">
                         email
+                        <input
+                          autoComplete="on"
+                          id="email"
+                          required
+                          type="text"
+                          value={email}
+                          onChange={(event) => setEmail(event.target.value)}
+                          className="border-2 rounded-lg p-3 flex border-gray-300"
+                        />
                       </label>
-                      <input
-                        required
-                        type="text"
-                        value={email}
-                        onChange={(event) => setEmail(event.target.value)}
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                      />
                     </div>
                     <div className="flex flex-col py-2">
-                      <label className="uppercase text-sm py-2 font-semibold">
+                      <label
+                        htmlFor="subject"
+                        className="uppercase text-sm py-2 font-semibold">
                         Subject
+                        <input
+                          autoComplete="on"
+                          id="subject"
+                          type="text"
+                          value={subject}
+                          onChange={(event) => setSubject(event.target.value)}
+                          className="border-2 rounded-lg p-3 flex border-gray-300"
+                        />
                       </label>
-                      <input
-                        type="text"
-                        value={subject}
-                        onChange={(event) => setSubject(event.target.value)}
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                      />
                     </div>
                     <div className="flex flex-col py-2">
-                      <label className="uppercase text-sm py-2 font-semibold">
+                      <label
+                        htmlFor="message"
+                        className="uppercase text-sm py-2 font-semibold">
                         Message
+                        <textarea
+                          id="message"
+                          value={message}
+                          onChange={(event) => setMessage(event.target.value)}
+                          className="border-2 rounded-lg py-3 border-gray-300"
+                          rows={10}
+                        />
                       </label>
-                      <textarea
-                        value={message}
-                        onChange={(event) => setMessage(event.target.value)}
-                        className="border-2 rounded-lg py-3 border-gray-300"
-                        rows={10}
-                      />
                     </div>
                     <button
                       type="submit"

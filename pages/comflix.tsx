@@ -25,6 +25,7 @@ function comflix() {
         <div className="w-screen h-[30vh] lg:h-[40vh] relative">
           <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10" />
           <Image
+            priority
             src={comflixImg}
             fill
             className="absolute z-1 object-cover"
@@ -125,6 +126,7 @@ function comflix() {
         <div className="max-w-[1240px] m-auto grid md:grid-cols-2 gap-8">
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={netflixloginmb}
               width={500}
               height={500}
@@ -132,10 +134,17 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image src={netflixmb} width={500} height={500} alt="projectImg" />
+            <Image
+              style={{ width: "auto", height: "auto" }}
+              src={netflixmb}
+              width={500}
+              height={500}
+              alt="projectImg"
+            />
           </div>
           <div className="w-full h-[437px] m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={netflixmodalmb}
               width={500}
               height={500}
@@ -144,6 +153,7 @@ function comflix() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={netflixmodalip}
               width={200}
               height={200}
@@ -152,6 +162,7 @@ function comflix() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={netflixloginip}
               width={200}
               height={200}
@@ -159,10 +170,17 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image src={netflixip} width={200} height={200} alt="projectImg" />
+            <Image
+              style={{ width: "auto", height: "auto" }}
+              src={netflixip}
+              width={200}
+              height={200}
+              alt="projectImg"
+            />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={netflixloginim}
               width={500}
               height={500}
@@ -170,7 +188,13 @@ function comflix() {
             />
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <Image src={netflixim} width={500} height={500} alt="projectImg" />
+            <Image
+              style={{ width: "auto", height: "auto" }}
+              src={netflixim}
+              width={500}
+              height={500}
+              alt="projectImg"
+            />
           </div>
         </div>
         <div className="flex items-center justify-between">

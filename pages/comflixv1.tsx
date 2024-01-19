@@ -30,6 +30,7 @@ function comflix() {
         <div className="w-screen h-[30vh] lg:h-[40vh] relative">
           <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10" />
           <Image
+            priority
             src={comflixV1Img}
             fill
             className="absolute z-1 object-cover"

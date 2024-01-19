@@ -23,11 +23,11 @@ function Skills() {
             <Skill skillImg={html} name="html" />
             <Skill skillImg={css} name="css" />
             <Skill skillImg={javascript} name="javascript" />
-            <Skill skillImg={typescript} name="typescript" />
+            {/* <Skill skillImg={typescript} name="typescript" /> */}
             <Skill skillImg={react} name="react" />
             <Skill skillImg={nextjs} name="nextjs" />
-            <Skill skillImg={firebase} name="firebase" />
-            <Skill skillImg={tailwind} name="tailwind" />
+            {/* <Skill skillImg={firebase} name="firebase" /> */}
+            {/* <Skill skillImg={tailwind} name="tailwind" /> */}
             <Skill skillImg={github} name="github" />
           </div>
         </div>

@@ -52,6 +52,7 @@ function Navbar() {
         <div>
           <Links href="/">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={logoImg}
               width={150}
               height={50}
@@ -61,10 +62,9 @@ function Navbar() {
               } hidden md:inline`}
             />
           </Links>
-          <Links
-            href="/"
-            className="cursor-pointer">
+          <Links href="/" className="cursor-pointer">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={logoImgM}
               width={125}
               height={50}
@@ -204,7 +204,13 @@ function Navbar() {
           <div className=" px-2 sm:px-4 md:px-6 -mt-8">
             <div className=" flex w-full items-center justify-between">
               <Link to="/">
-                <Image src={logoImg} width={150} height={100} alt="logo-img" />
+                <Image
+                  style={{ width: "auto", height: "auto" }}
+                  src={logoImg}
+                  width={150}
+                  height={100}
+                  alt="logo-img"
+                />
               </Link>
               <div
                 className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -298,7 +304,12 @@ function Navbar() {
                     <FaGithub />
                   </div>
                 </Links>
-                <Link to="contact" spy={true} smooth={true} duration={100} onClick={handleNav}>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                  onClick={handleNav}>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineMail />
                   </div>

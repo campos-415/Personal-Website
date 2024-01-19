@@ -25,6 +25,7 @@ function Twitter() {
         <div className="w-screen h-[30vh] lg:h-[40vh] relative">
           <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10" />
           <Image
+            priority
             src={TwitterImg}
             fill
             className="absolute z-1 object-cover"
@@ -111,8 +112,8 @@ function Twitter() {
         <div className="max-w-[1240px] m-auto grid md:grid-cols-2 gap-8">
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twittermb}
-              className=""
               width={500}
               height={500}
               alt="img"
@@ -120,8 +121,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twitterMacbook}
-              className=""
               width={500}
               height={500}
               alt="img"
@@ -129,8 +130,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twittermodalmb}
-              className=""
               width={500}
               height={500}
               alt="img"
@@ -138,8 +139,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twittercommentmb}
-              className=""
               width={500}
               height={500}
               alt="img"
@@ -147,8 +148,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twitterIphone}
-              className=""
               width={200}
               height={200}
               alt="img"
@@ -156,8 +157,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twitterlogedin}
-              className=""
               width={200}
               height={200}
               alt="img"
@@ -165,8 +166,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twitterim}
-              className=""
               width={500}
               height={500}
               alt="img"
@@ -174,8 +175,8 @@ function Twitter() {
           </div>
           <div className="w-full h-auto m-auto shadow-2xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
+              style={{ width: "auto", height: "auto" }}
               src={twitterImac}
-              className=""
               width={500}
               height={500}
               alt="img"
